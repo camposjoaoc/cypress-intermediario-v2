@@ -70,9 +70,10 @@ Cypress.Commands.add('gui_setLabelOnIssue', (label) => {
   cy.contains(label.name).click();
   cy.get('body').click();
 });
-
+//for commands customized - setMilestone
 Cypress.Commands.add('gui_setMilestoneOnIssue', (milestone) => {
   cy.get('[data-qa-selector="milestone_block"]')
-    .find('[data-testid="edit-button"]').click();
+    .find('[data-testid="edit-button"]')
+    .click();
   cy.contains('[data-testid="milestone-items"]', milestone.title).click();
 });

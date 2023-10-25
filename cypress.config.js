@@ -7,9 +7,11 @@ module.exports = defineConfig({
       hideCredentials: true, //quando estiver executando testes, será escondida as credenciais
       requestMode: true,
     },
+    experimentalRunAllSpecs: true,
   },
   fixturesFolder: false,
   video: false,
   viewportWidth: 1920,
   viewportHeight: 1300,
+  
 });
